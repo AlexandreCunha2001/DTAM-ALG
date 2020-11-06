@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha extra 10</title>
+</head>
+
+<body>
+    <script>
+        let number = +prompt("Insira um numero")
+        let isPrime = true;
+        
+        for (let i = 2; i < number; i++) {
+            if (number % i == 0) {
+                isPrime = false;
+            }
+        }
+        if (isPrime) {
+        console.log(`${number} é um numero primo`);
+    } else {
+        console.log(`${number} não é um numero primo`);
+    }
+    </script>
+</body>
+
+</html>
