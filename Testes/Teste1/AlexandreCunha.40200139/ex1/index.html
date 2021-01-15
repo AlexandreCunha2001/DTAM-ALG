@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1</title>
+</head>
+<body>
+    <script>
+        
+        var n = 0;
+        var i = 0;  
+        var r = 0;
+            let q = +prompt('Insira o numero de notas a ser lidas: ');
+            console.log(q);
+        while (i < q) {
+             let n = +prompt('Insira uma nota:')
+             console.log(n);
+            if(n < 0 || n > 20 ){
+            console.log('Numero invalido');
+        }else{
+            r = r + n;
+            console.log(r);
+            i++
+        }
+        }
+        r = r / q;
+        console.log('A média das notas é de ', r);
+    </script>
+</body>
+</html>

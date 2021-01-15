@@ -3,36 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ex3</title>
 </head>
 <body>
-    <h1 class="red">Saudações</h1>
-<p id="p1">Olá Mundo</p>
-<p id="p2" class="red">Olá Portugal</p>
-<p id="p3">Olá Vila do Conde</p>
-<div>Olha uma div</div>
-<div>Olha uma segunda div com um
-<span>primeiro span</span>
-</div>
-<span>Olha um segundo span</span>
+     <table>
+        <tr>
+        <th>escola</th>
+        <th>local</th>
+        </tr>
+        <tr>
+        <td>ESMAD</td>
+        <td>Vila do Conde</td>
+        </tr>
+        </table>  
+        <script>
 
-<script>
-    //b
-    const el = document.getElementById('p2')
-    const el1 = document.querySelector('p2')
-    console.log(el);
+            //b
+            /* const table =`
+            <tr>
+        <th>escola</th>
+        <th>local</th>
+        </tr>
+        <tr>
+        <td>ESMAD</td>
+        <td>Vila do Conde</td>
+        </tr>
+        </table>
+            `
 
-    //c
-    const ps = document.getElementsByTagName("p")
-    console.log(ps);
+           const body = document.querySelector('body')
+            body.innerHTML = table; */
 
-    //d
-    const ps2 = document.querySelector('p')
-    for(let i=0; i<ps.length; i++){
-        console.log(ps[i].innerHTML);
-    }
-    console.log(ps.values);
+//c
+        const table = document.querySelector('table')
+        table.innerHTML = <tr><td>IseP</td><td>Porto</td></tr>;
+//d
+const td = document.querySelector('td:last-of-type')
+td.innerHTML = 'Vila do Conde/ Povoa de Varzim'
 
-</script>
+
+
+        </script>
 </body>
 </html>
