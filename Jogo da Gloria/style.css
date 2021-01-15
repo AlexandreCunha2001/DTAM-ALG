@@ -33,3 +33,7 @@ table {
 .color_yellow{
     background-color: yellow;
 }
+
+.img{
+    width: 50%;
+}
